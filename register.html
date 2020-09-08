@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/register-style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!--------------------------Main Nav---------------------------->
+        <div class="main-nav">
+          <a href="index.html">Home</a>
+          <a href="#news">About Game</a>
+          <a href="register.html" class="active">Register</a>
+          <a href="#about">Sponsors</a>
+          <a href="#about">Contact Us</a>
+          <a href="#about">Donate</a>
+        </div>
+        <!--    Mobile menu-->
+        <div class="topnav responsive" id="myTopnav">
+          <a href="index.html">Home</a>
+          <a href="#news">About Game</a>
+          <a href="register.html">Register</a>
+          <a href="#about">Sponsors</a>
+          <a href="#about">Contact Us</a>
+          <a href="#about">Donate</a>
+          <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!--    ------------------------------Slider---------------------------------------->
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item item active">
+            <img
+              class="d-block w-100"
+              src="assets/Image/carouselFIrst-compressor.jpg"
+              alt="First slide"
+            />
+            <div class="carousel-caption d-md-block flex-text">
+              <h2>Longer Text Here And here</h2>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item item">
+            <img
+              class="d-block w-100"
+              src="assets/Image/carouselFIrst-compressor.jpg"
+              alt="Second slide"
+            />
+            <div class="carousel-caption d-md-block flex-text">
+              <h2>Longer Text Here And here</h2>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item item">
+            <img
+              class="d-block w-100"
+              src="assets/Image/carouselFIrst-compressor.jpg"
+              alt="Third slide"
+            />
+            <div class="carousel-caption d-md-block flex-text">
+              <h2>Longer Text Here And here</h2>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!--  ----------------------------- Form------------------------------------>
+      <form name="forma">
+        <h3>Registration</h3>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control form-control-lg"
+            name="fname"
+            id="name"
+            placeholder="Name"
+            required
+            data-container="body"
+            data-toggle="popover"
+            data-placement="left"
+            data-content="Active"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control form-control-lg"
+            id="surname"
+            placeholder="Surname"
+            required
+            data-container="body"
+            data-toggle="popover"
+            data-placement="left"
+            data-content="Success"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            class="form-control form-control-lg"
+            type="tel"
+            pattern="^[0-9-+\s()]*$"
+            id="-tel-input"
+            placeholder="Phone"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            class="form-control form-control-lg"
+            type="text"
+            id="address"
+            placeholder="Address"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            class="form-control form-control-lg"
+            type="email"
+            id="email-input"
+            placeholder="Email"
+            required
+            data-container="body"
+            data-toggle="popover"
+            data-placement="left"
+            data-content="Error"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            class="form-control form-control-lg"
+            type="text"
+            id="City"
+            placeholder="City"
+            required
+          />
+        </div>
+        <!--    Taaabs here------->
+        <section id="tabs">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12">
+                <nav>
+                  <div
+                    class="nav nav-tabs nav-fill"
+                    id="nav-tab"
+                    role="tablist"
+                  >
+                    <a
+                      class="nav-item nav-link active"
+                      id="nav-home-tab"
+                      data-toggle="tab"
+                      href="#nav-home"
+                      role="tab"
+                      aria-controls="nav-home"
+                      aria-selected="true"
+                      >Terms and conditions</a
+                    >
+                    <a
+                      class="nav-item nav-link"
+                      id="nav-profile-tab"
+                      data-toggle="tab"
+                      href="#nav-profile"
+                      role="tab"
+                      aria-controls="nav-profile"
+                      aria-selected="false"
+                      >Rules</a
+                    >
+                    <a
+                      class="nav-item nav-link"
+                      id="nav-contact-tab"
+                      data-toggle="tab"
+                      href="#nav-contact"
+                      role="tab"
+                      aria-controls="nav-contact"
+                      aria-selected="false"
+                      >FAQ</a
+                    >
+                  </div>
+                </nav>
+                <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="nav-home"
+                    role="tabpanel"
+                    aria-labelledby="nav-home-tab"
+                  >
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="nav-profile"
+                    role="tabpanel"
+                    aria-labelledby="nav-profile-tab"
+                  >
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="nav-contact"
+                    role="tabpanel"
+                    aria-labelledby="nav-contact-tab"
+                  >
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--    Mobile collapse-->
+        <div
+          class="panel-group"
+          id="accordion"
+          role="tablist"
+          aria-multiselectable="true"
+        >
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                <a
+                  role="button"
+                  data-toggle="collapse"
+                  data-parent="#accordion"
+                  href="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  <i class="more-less glyphicon glyphicon-plus"><b>+</b></i>
+                  Terms And Conditions
+                </a>
+              </h4>
+            </div>
+            <div
+              id="collapseOne"
+              class="panel-collapse collapse"
+              role="tabpanel"
+              aria-labelledby="headingOne"
+            >
+              <div class="panel-body">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h4 class="panel-title">
+                <a
+                  class="collapsed"
+                  role="button"
+                  data-toggle="collapse"
+                  data-parent="#accordion"
+                  href="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  <i class="more-less glyphicon glyphicon-plus"><b>+</b></i>
+                  Rules
+                </a>
+              </h4>
+            </div>
+            <div
+              id="collapseTwo"
+              class="panel-collapse collapse"
+              role="tabpanel"
+              aria-labelledby="headingTwo"
+            >
+              <div class="panel-body">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default panel-last">
+            <div class="panel-heading" role="tab" id="headingThree">
+              <h4 class="panel-title">
+                <a
+                  class="collapsed"
+                  role="button"
+                  data-toggle="collapse"
+                  data-parent="#accordion"
+                  href="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  <i class="more-less glyphicon glyphicon-plus"><b>+</b></i>
+                  FAQ
+                </a>
+              </h4>
+            </div>
+            <div
+              id="collapseThree"
+              class="panel-collapse collapse"
+              role="tabpanel"
+              aria-labelledby="headingThree"
+            >
+              <div class="panel-body">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  Terms and Conditions checkbox  -->
+        <div class="form-group form-check">
+          <input
+            type="checkbox"
+            required
+            class="form-check-input"
+            id="exampleCheck1"
+          />
+          <label class="form-check-label" for="exampleCheck1"
+            ><p>
+              I AGREE with terms and conditions. I have read them thorougly and
+              agree to abide them. <a href="#"> Terms of Service</a>
+            </p></label
+          >
+        </div>
+        <!-- ------Button   ----------->
+        <button type="submit" id="buttonas" class="btn btn-lg">REGISTER</button>
+      </form>
+
+      <!--    ---------------------------End Of Form------------------------------------------>
+      <!--    ---------------------------End Of Form------------------------------------------>
+
+      <!--Location-->
+      <div class="card-map">
+        <div class="container">
+          <h4><b>Where to Find Us?</b></h4>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9087.160993124697!2d20.983648347224985!3d55.291818404883884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e497f2dddd43dd%3A0x9db654e7367d0a9!2sParnid%C5%BEio%20kopa!5e0!3m2!1slt!2slt!4v1595928506025!5m2!1slt!2slt"
+          width="100%"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </div>
+    </main>
+    <!-------------------------------------Footer------------------------------------------>
+    <footer>
+      <div class="text-center center-block">
+        <p class="txt-railway">
+          By Arentas Stonys made to practise HTML, CSS and JavaScript
+        </p>
+        <a href="tel:+37064326085"
+          ><i id="social-fb" class="fa fa-phone-square fa-3x social"></i
+        ></a>
+        <a href="https://github.com/Arentas93"
+          ><i id="social-tw" class="fa fa-github-square fa-3x social"></i
+        ></a>
+        <a href="mailto:arentas.stonys@gmail.com"
+          ><i id="social-em" class="fa fa-envelope-square fa-3x social"></i
+        ></a>
+      </div>
+    </footer>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="bootstrap-4.5.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/mano.js"></script>
+  </body>
+</html>
