@@ -335,7 +335,7 @@ footer .center-block p {
     }
     .flex-text p {
     padding-right: 5%;
-    font-size: .8rem;
+    font-size: .6rem;
     }
     form {
     width: 56%;
@@ -343,5 +343,8 @@ footer .center-block p {
     .popover {
         width: 19%;
     } 
+    #buttonas {
+        width:65%;
+    }
 }
 
